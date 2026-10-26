@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import "./reference.css";
+import "./fonts.css";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Tuhfa Mart — পরিবারের বিশ্বস্ত অনলাইন শপ",
+  title: "আপন — ছোট ছোট যত্নে, আরও আপন",
   description:
     "পরিবার, মা ও শিশুর যত্ন, খেলনা এবং দৈনন্দিন প্রয়োজনের নির্বাচিত পণ্য।",
 };

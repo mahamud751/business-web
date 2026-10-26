@@ -12,9 +12,14 @@ export default async function Page({
   let products = fallback;
   if (process.env.DATABASE_URL) {
     try {
-      products = await getDb().product.findMany({ orderBy: { id: "desc" } });
+      products = await getDb().product.findMany({
+        where: { deletedAt: null },
+        orderBy: { createdAt: "desc" },
+      });
     } catch {
-      console.error("Catalog database unavailable; showing bundled catalog");
+      throw new Error(
+        "The catalog database is unavailable. Please try again shortly.",
+      );
     }
   }
   if (

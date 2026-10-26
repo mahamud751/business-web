@@ -11,7 +11,9 @@
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx prisma/seed.ts",
     "db:deploy": "prisma migrate deploy",
-    "test:browser": "node scripts/verify.mjs"
+    "test:browser": "node scripts/verify.mjs",
+    "admin:create": "tsx scripts/create-admin.ts",
+    "test:admin": "node scripts/verify-admin.mjs"
   },
   "dependencies": {
     "next": "16.4.3",

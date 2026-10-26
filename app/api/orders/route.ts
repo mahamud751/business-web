@@ -9,7 +9,7 @@ const schema = z.object({
   items: z
     .array(
       z.object({
-        id: z.string().max(30),
+        id: z.string().max(64),
         quantity: z.number().int().min(1).max(20),
       }),
     )
@@ -41,14 +41,14 @@ export async function POST(request: Request) {
     const order = await getDb().$transaction(async (tx) => {
       const data = input.data;
       const products = await tx.product.findMany({
-        where: { id: { in: data.items.map((i) => i.id) } },
+        where: { id: { in: data.items.map((i) => i.id) }, deletedAt: null },
       });
       if (products.length !== data.items.length) throw new Error("STOCK");
       let subtotal = 0;
       for (const item of data.items) {
         const p = products.find((p) => p.id === item.id)!;
         const update = await tx.product.updateMany({
-          where: { id: p.id, stock: { gte: item.quantity } },
+          where: { id: p.id, deletedAt: null, stock: { gte: item.quantity } },
           data: { stock: { decrement: item.quantity } },
         });
         if (update.count !== 1) throw new Error("STOCK");
@@ -72,6 +72,7 @@ export async function POST(request: Request) {
           items: {
             create: data.items.map((i) => ({
               productId: i.id,
+              productName: products.find((p) => p.id === i.id)!.name,
               quantity: i.quantity,
               price: products.find((p) => p.id === i.id)!.price,
             })),
