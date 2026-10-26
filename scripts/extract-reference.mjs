@@ -1,0 +1,15 @@
+import {load} from 'cheerio';
+import {readFileSync,writeFileSync} from 'node:fs';
+const $=load(readFileSync('/tmp/tuhfa.html','utf8'));
+const main=$('main').filter((i,e)=>$(e).find('.site-header').length>0).first();
+const products=[];
+const num=s=>Number(s.replace(/[০-৯]/g,c=>'০১২৩৪৫৬৭৮৯'.indexOf(c)).replace(/[^0-9]/g,''));
+main.find('.product-card').each((i,e)=>{const c=$(e),id=c.find('[data-product-id]').attr('data-product-id');if(!id||products.some(p=>p.id===id))return;products.push({id,slug:c.find('h3 a').attr('href').split('/').pop(),name:c.find('h3').text(),category:c.find('.product-info > span').text(),image:c.find('img').attr('src'),price:num(c.find('.product-info p b').text()),originalPrice:num(c.find('del').text()),stock:100});});
+const categories=main.find('.category-card').map((i,e)=>({slug:$(e).attr('href').split('/').pop(),name:$(e).find('b').text(),image:$(e).find('img').attr('src')})).get();
+main.find('script,noscript').remove();
+main.find('*').each((i,e)=>{for(const a of Object.keys(e.attribs||{})){if(a.startsWith('on')||['data-nimg','data-nextjs-scroll-focus-boundary'].includes(a))$(e).removeAttr(a);}});
+writeFileSync('lib/catalog.json',JSON.stringify({products,categories},null,2));
+writeFileSync('lib/home-template.json',JSON.stringify(main.html()));
+writeFileSync('lib/header-template.json',JSON.stringify(main.find('.site-header-stack').prop('outerHTML')));
+writeFileSync('lib/footer-template.json',JSON.stringify(main.find('.site-footer').prop('outerHTML')));
+console.log({products:products.length,categories:categories.length,html:main.html().length});

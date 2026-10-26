@@ -1,0 +1,206 @@
+{
+  "products": [
+    {
+      "id": "266",
+      "slug": "hash-light-murgi-free",
+      "name": "রিচার্জেবল হাস খেলনা কিনলে ২ টা খেলনা ফ্রী,  প্রজেক্টর লাইট ও মুরগী",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/25627b48-c951-4512-aa34-f96d4f29fdde.webp",
+      "price": 999,
+      "originalPrice": 1500,
+      "stock": 100
+    },
+    {
+      "id": "265",
+      "slug": "boxingtoy-offer-light",
+      "name": "বক্সিং টয় কিনলেই প্রজেক্টর লাইট ও পাম্পার মেশিন ফ্রী",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/a6ab10a7-8df5-489e-80f3-70b7c2700c9c.webp",
+      "price": 750,
+      "originalPrice": 1550,
+      "stock": 100
+    },
+    {
+      "id": "264",
+      "slug": "boxingtoy-offer",
+      "name": "বক্সিং টয়,  পান্চিং টয়",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/bf232068-7fc9-4743-9922-934829adf5ae.webp",
+      "price": 500,
+      "originalPrice": 850,
+      "stock": 100
+    },
+    {
+      "id": "263",
+      "slug": "intelligent-book-update-version",
+      "name": "কথা বলা বই, সর্বশেষ আপডেট ভার্সন ইন্টেলিজেন্ট বই ( লিটল স্টার, জায়ান,শিক্ষাকোষ কোম্পানি)",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/286103fb-ab7d-4ba7-abac-97737f8ee897.webp",
+      "price": 890,
+      "originalPrice": 3000,
+      "stock": 100
+    },
+    {
+      "id": "262",
+      "slug": "ben-10-train-set",
+      "name": "বেন ১০ ট্রেন সেট – প্রটেক্টর অব আর্থ",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/33b07ac3-334d-4b94-898f-c7fdad5a3860.webp",
+      "price": 250,
+      "originalPrice": 350,
+      "stock": 100
+    },
+    {
+      "id": "261",
+      "slug": "jibon-lighting-house",
+      "name": "জিবন লাইটিং হাউস – মাই ড্রিম ডলহাউস প্লে সেট",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/3ba0be9c-27cb-41f9-bb31-7a846ead8a62.webp",
+      "price": 550,
+      "originalPrice": 650,
+      "stock": 100
+    },
+    {
+      "id": "260",
+      "slug": "spiderman-crawling-toy",
+      "name": "ক্রলিং স্পাইডারম্যান অ্যাকশন ফিগার খেলনা (Battery Operated Crawling Spiderman Toy)",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/f8ee6dd3-24f3-4f9d-b1cd-2b3de1a3048c.webp",
+      "price": 450,
+      "originalPrice": 650,
+      "stock": 100
+    },
+    {
+      "id": "259",
+      "slug": "গ্রিন-লেজার-পয়েন্টার-green-laser-pointer",
+      "name": "গ্রিন লেজার পয়েন্টার (Green Laser Pointer)",
+      "category": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/2026/f414002f-741f-44ed-b617-f5da53c1c785.webp",
+      "price": 550,
+      "originalPrice": 850,
+      "stock": 100
+    },
+    {
+      "id": "220",
+      "slug": "waterproof-bed-cover",
+      "name": "ওয়াটারপ্রুফ বেড কভার",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/f9409324-e31d-4575-8dbe-e2a003157e48.webp",
+      "price": 1250,
+      "originalPrice": 1550,
+      "stock": 100
+    },
+    {
+      "id": "219",
+      "slug": "newborn-baby-nappy-set",
+      "name": "৮ পিস নিউবর্ন বেবি ন্যাপি সেট",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/984779d4-1165-4155-ab58-5879191138c7.webp",
+      "price": 250,
+      "originalPrice": 350,
+      "stock": 100
+    },
+    {
+      "id": "218",
+      "slug": "baby-cuddle-pillow-set",
+      "name": "বেবি কোল বালিশ ও বালিশ সেট",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/f82d4c72-9a28-4c82-8d8d-a38379586d55.webp",
+      "price": 450,
+      "originalPrice": 650,
+      "stock": 100
+    },
+    {
+      "id": "217",
+      "slug": "baby-waterproof-urine-mat",
+      "name": "বেবি ওয়াটারপ্রুফ ইউরিন ম্যাট",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/71a4573f-e426-40b5-8f74-e143b47e5059.webp",
+      "price": 550,
+      "originalPrice": 750,
+      "stock": 100
+    },
+    {
+      "id": "216",
+      "slug": "baby-hooded-cap-towel",
+      "name": "বেবি ক্যাপ টাওয়াল",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/84695bff-de22-4b6f-9035-74712b7912ec.webp",
+      "price": 550,
+      "originalPrice": 650,
+      "stock": 100
+    },
+    {
+      "id": "215",
+      "slug": "baby-soft-towel",
+      "name": "বেবি সফট টাওয়াল",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/18c69779-8903-47a8-9ea2-b36f918cd5ec.webp",
+      "price": 550,
+      "originalPrice": 860,
+      "stock": 100
+    },
+    {
+      "id": "214",
+      "slug": "baby-bath-brush",
+      "name": "বেবি বাথ ব্রাশ",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/aab77028-39cc-4112-b547-b8eac92185c4.webp",
+      "price": 50,
+      "originalPrice": 100,
+      "stock": 100
+    },
+    {
+      "id": "213",
+      "slug": "full-silicone-premium-plate-with-spoon-fork",
+      "name": "ফুল সিলিকন প্রিমিয়াম প্লেট",
+      "category": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/2026/4a5e93c1-dff6-4d3d-a50f-176ac92e5ca3.webp",
+      "price": 550,
+      "originalPrice": 750,
+      "stock": 100
+    }
+  ],
+  "categories": [
+    {
+      "slug": "kids-toys",
+      "name": "খেলনা ও লার্নিং",
+      "image": "/storage/v1/object/public/products/categories/6bf74832-0ec7-4a1d-9006-53a4babf5225.png"
+    },
+    {
+      "slug": "mother-baby",
+      "name": "মা ও শিশুর যত্ন",
+      "image": "/storage/v1/object/public/products/categories/ea3ddc6a-9ea7-4743-a717-70b9965805fe.png"
+    },
+    {
+      "slug": "kitchen",
+      "name": "রান্নাঘরের সামগ্রী",
+      "image": "/storage/v1/object/public/products/categories/42188993-36c7-4279-bd6b-4b9c94f37a89.png"
+    },
+    {
+      "slug": "organic",
+      "name": "অর্গানিক ফ্রুটস",
+      "image": "/storage/v1/object/public/products/categories/12d4278d-b7b4-4ab9-a0b2-8f1af7e9e033.jpg"
+    },
+    {
+      "slug": "viral-products",
+      "name": "জনপ্রিয় পণ্য",
+      "image": "/storage/v1/object/public/products/categories/0b61a452-0330-41d6-bcea-18fd1fdeb134.png"
+    },
+    {
+      "slug": "islamic-products",
+      "name": "ইসলামিক পণ্য",
+      "image": "/storage/v1/object/public/products/categories/62b7cbab-d53d-40c8-864f-7851364fb7b4.png"
+    },
+    {
+      "slug": "home-lifestyle",
+      "name": "ঘর ও লাইফস্টাইল",
+      "image": "/storage/v1/object/public/products/categories/a0654b91-b202-4f94-884a-def870ac3122.png"
+    },
+    {
+      "slug": "gift-items",
+      "name": "উপহার সামগ্রী",
+      "image": "/storage/v1/object/public/products/categories/788519c1-de97-46f9-bb00-6eff12121452.png"
+    }
+  ]
+}

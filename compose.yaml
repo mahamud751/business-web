@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: tuhfa
+      POSTGRES_PASSWORD: tuhfa
+      POSTGRES_DB: tuhfa
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tuhfa"]
+      interval: 5s
+      retries: 10
+volumes:
+  postgres_data:

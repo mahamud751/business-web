@@ -1,0 +1,41 @@
+{
+  "name": "tuhfa-mart",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:deploy": "prisma migrate deploy",
+    "test:browser": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "@prisma/client": "7.10.1",
+    "@prisma/adapter-pg": "7.10.1",
+    "pg": "8.23.1",
+    "html-react-parser": "6.1.9",
+    "zod": "4.6.7",
+    "dotenv": "18.0.9"
+  },
+  "devDependencies": {
+    "prisma": "7.10.1",
+    "typescript": "7.0.2",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/pg": "8.23.1",
+    "tsx": "4.23.15",
+    "cheerio": "1.2.0",
+    "@playwright/test": "1.64.1"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
